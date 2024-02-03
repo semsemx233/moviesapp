@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <title>Movies App</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <input id="search" type="search" placeholder="Search" class="form-control w-50 mx-auto my-5 bg-transparent rounded-pill text-white shadow-none border-white px-3">
+    
+    <!-- Home -->
+    <div class="row movies-list g-4 text-white">
+      
+    </div>
+
+    <section id="contact" class=" text-white py-5">
+      <h2>Contact US</h2>
+      <form>
+          <div class="row mt-3">
+              <div class="col-md-6">
+                  <input type="text" required="" id="name" maxlength="37" class="form-control mt-4" placeholder="Enter Your Name">
+                  <span class="error"></span>
+              </div>
+              <div class="col-md-6">
+                  <input type="email" required="" id="email" class="form-control mt-4" placeholder="Enter Your Email">
+                  <span class="error"></span>
+              </div>
+              <div class="col-md-6">
+                  <input type="number" required="" id="phone" class="form-control mt-4" placeholder="Enter Your Phone">
+                  <span class="error"></span>
+              </div>
+              <div class="col-md-6">
+                  <input type="number" required="" id="age" class="form-control mt-4" placeholder="Enter Your Age">
+                  <span class="error"></span>
+              </div>
+              <div class="col-md-6 position-relative">
+                  <input type="password" required="" id="password" class="form-control mt-4" placeholder="Enter Your Password">
+                  <span class="error"></span>
+                  <span class="showPass" style="opacity: 0; bottom: -20px;"><i data-show="show" class="fa-solid fa-eye-slash"></i></span>
+              </div>
+              <div class="col-md-6">
+                  <input type="password" required="" id="repassword" class="form-control mt-4" placeholder="ReEnter Password">
+                  <span class="error"></span>
+              </div>
+              <div class="col-md-12  mt-4">
+                  <button type="submit" class="form-btn rounded-2 mb-3 animate__animated">Submit</button>
+              </div>
+          
+      </div></form>
+  </section>
+
+  <nav>
+    <div class="menu hide position-fixed top-0 start-0">
+
+      <div class="hidden-menu">
+
+          <div class="links">
+            <p attr="now_playing">now playing</p>
+            <p attr="popular">popular</p>
+            <p attr="top_rated">top rated</p>
+            <p attr="trending">trending</p>
+            <p attr="upcoming">upcoming</p>
+
+            <a href="#contact">contact us</a>
+          </div>
+
+          <footer>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+            Copyright © 2022 All Rights Reserved. <br> Created by <a href="#">Housam Salah</a>
+          </footer>
+
+      </div>
+
+      <div class="visible-menu">
+        <img class="w-75" src="images/logo.png" alt="logo">
+
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="social-box">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  </div>
+
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
